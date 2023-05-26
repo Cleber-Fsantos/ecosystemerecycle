@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Inter', sans-serif;
+    --verde1: #1B8D73;
+    --branco: #fff;
+}
+
+header{
+    background: var(--verde1);
+}
+
+.div_headerPosition{
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+header nav a{
+    font-family: var(--font1);
+    color: var(--branco);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.btn_entrar{
+    border: 3px solid var(--branco);
+    border-radius: 30px;
+    padding: 0 50px;
+}
+
+h1{
+    position:absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+.banner1{
+    background-image: url(../img/Banner1.png);
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+}
+
+.img_logo{
+    margin-bottom: 40px;
+    width: 150px;
+    height: 140px;
+}
+.div_banner{
+    display: flex;
+    width: 80%;
+}
+
+.div_banner h2{
+    font-family: var(--font1);
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+.div_banner p{
+    font-family: var(--font2);
+    font-size: 20px;
+    padding: 0 60px 0 0;
+}
+
+.div_banner img{
+    width: 600px;
+    height: 400px;
+}
+
+.banner2{
+    padding-top: 100px;
+    background-image: url(../img/Banner2.png);
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.div_banner2{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.div_banner2 h3{
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.card_MisVisVal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_MisVisVal img:nth-child(1){
+    width: 100px;
+    height: 100px;
+}
