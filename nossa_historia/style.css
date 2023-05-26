@@ -38,7 +38,7 @@ header nav a{
     text-transform: uppercase;
 }
 
-.btn_entrar{
+.btn_entrar, .btn_enviar{
     border: 3px solid var(--branco);
     border-radius: 30px;
     padding: 0 50px;
@@ -90,9 +90,9 @@ h1{
 .banner2{
     padding-top: 100px;
     background-image: url(../img/Banner2.png);
-    height: 900px;
     display: flex;
     justify-content: center;
+	padding-bottom: 100px;
 }
 
 
@@ -102,21 +102,97 @@ h1{
     width: 80%;
 }
 
-.div_banner2 h3{
-    font-family: var(--font1);
-    font-weight: bold;
-    font-size: 32px;
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.card_MisVisVal{
+.div_banner2 div{
     display: flex;
     flex-direction: column;
     align-items: center;
+	width:333px;
+	text-align: center;
 }
 
-.card_MisVisVal img:nth-child(1){
-    width: 100px;
-    height: 100px;
+
+.div_banner2 h3{
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 40px;
+	text-transform: capitalize;
+}
+
+
+.img_missao{
+    width: 200px;
+    height: 200px;
+}
+
+.img_visao{
+    width: 250px;
+    height: 200px;
+}
+
+.img_valor{
+    width: 200px;
+    height: 200px;
+}
+
+.div_banner2 p{
+	padding: 30px 15px 10px 15px;
+	font-family: var(--font2);
+	font-size: 18px;
+}
+
+footer{
+	background: var(--verde1);
+}
+
+.div_footerPosition{
+	height: 300px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	color: var(--branco);
+	font-family: var(--font1);
+	font-weight: bold;
+}
+
+
+.foot_contats img{
+	margin-right: 15px;
+} 
+
+.foot_contats div:nth-child(-n+2){
+	display: flex;
+	margin-bottom:20px;
+}
+
+.foot_menu{
+	text-transform: uppercase;
+	text-weight: 800;
+}
+
+.foot_menu ul{
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.foot_midiasBoletim span{
+	text-size: 26px;
+	text-weight: 800;
+}
+
+.foot_botetim{
+	display: flex;
+	padding: 15px 0;
+}
+
+.foot_botetim input{
+	font-family: var(font--2);
+	border-radius: 10px;
+	padding: 4px 40px 4px 10px;
+}
+
+.foot_midiasBoletim div:nth-child(2){
+	width: 200px;
 }
