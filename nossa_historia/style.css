@@ -14,22 +14,38 @@
 
 header{
     background: var(--verde1);
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .div_headerPosition{
-    display: flex;
-    justify-content: center;
-    margin:  0 auto;
-    align-items: center;
-    width: 100%;
-    height: 80px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* display: flex; */
+    /* justify-content: center; */
+
+
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
+
+.menu_barras{
+    display: none;
+}
+
+.menu_barras svg{
+    fill: var(--branco);
+    height: 40px;
+}
+
 
 header nav a{
     font-family: var(--font1);
@@ -86,10 +102,23 @@ h1{
     background-image: url(../img/Banner1.png);
     background-size: cover;
     height: calc(100vh - 80px);
+
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    
+}
+
+.div_banner1Position{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--branco);
+    
+    max-width: 1400px;
+    width: 80%;
 }
 
 .img_logo{
@@ -99,7 +128,8 @@ h1{
 }
 .div_banner{
     display: flex;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .div_banner h2{
@@ -108,15 +138,23 @@ h1{
     padding-bottom: 20px;
 }
 
+.div_banner div{
+    max-width: 660px;
+}
+
 .div_banner p{
     font-family: var(--font2);
     font-size: 20px;
-    padding: 0 60px 0 0;
+    /* padding: 0 60px 0 0; */ */
+    /* max-width: 660px; */
 }
 
 .div_banner img{
-    width: 600px;
-    height: 400px;
+    max-width: 465px;
+    width: 80%;
+    max-height: 320px;
+    height: 80%;
+    padding-left: 10px;
 }
 
 .banner2{
@@ -138,7 +176,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-	width:333px;
+	/* width:333px; */
 	text-align: center;
 }
 
@@ -256,4 +294,68 @@ footer{
 .ico_sociais img{
     width: 40px;
     height: 40px;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .banner1{
+        height: 100%;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1072px) {
+    .div_banner{
+        flex-wrap: wrap-reverse;
+        width: 100%;
+    }
+
+    .div_banner div{
+        width: 100%;
+    }
+
+    .div_banner img{
+        /* max-width: 465px; */
+        max-height: none;
+        width: 90%;
+        /* max-height: 320px; */
+        max-width: none;
+        height: 40%;
+        /* padding-left: 10px; */
+    }
+    
+}
+
+@media screen and (max-width: 998px) {
+
+    header{
+        position: relative;
+    }
+    .div_headerPosition{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu_barras{
+        display: flex;
+    }
+
+    #menu_links{
+        /* display: none; */
+        flex-direction: column;
+
+        position: absolute;
+        align-items: center;
+
+        left: 150;
+        top: 80px;
+        z-index: 1;
+
+        width: 200px;
+        background-color: green;
+        padding: 20px 0;
+
+
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
 }
