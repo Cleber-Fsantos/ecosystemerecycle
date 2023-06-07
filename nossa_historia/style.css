@@ -286,7 +286,8 @@ footer{
 }
 
 .ico_sociais{
-	width: 160px;
+	max-width: 160px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -294,6 +295,7 @@ footer{
 .ico_sociais img{
     width: 40px;
     height: 40px;
+    padding-right: 5px;
 }
 
 
@@ -312,16 +314,20 @@ footer{
 
     .div_banner div{
         width: 100%;
+        max-width:  none;
+        text-align: center;
+
     }
 
     .div_banner img{
         /* max-width: 465px; */
         max-height: none;
-        width: 90%;
+        width: 100%;
         /* max-height: 320px; */
         max-width: none;
-        height: 40%;
+        height: 50%;
         /* padding-left: 10px; */
+        padding-bottom: 40px;
     }
     
 }
@@ -357,5 +363,28 @@ footer{
 
 
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .div_footerPosition{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .div_footerPosition div{
+        padding-bottom: 30px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 812px) {
+    .div_banner2{
+        flex-wrap: wrap;
+    }
+
+    .div_banner2 div{
+        padding-bottom: 30px;
     }
 }
