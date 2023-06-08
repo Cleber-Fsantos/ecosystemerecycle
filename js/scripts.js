@@ -19,12 +19,10 @@ function mostrarMenu(){
     }
 };
 
-
-// function addEventListener("resize", () => {
-//     if (window.innerWidth > 1009){
-//         // menu.style.display = "flex";
-//         alert("Eu sou um alert!");
-//     } else{
-//         // menu.style.display = "none";
-//     }
-// });
+addEventListener("resize", () => {
+    if (window.innerWidth > 1073){
+        menu.style.display = "flex";
+    } else{
+        menu.style.display = "none";
+    }
+});
